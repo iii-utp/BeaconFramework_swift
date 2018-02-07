@@ -1,0 +1,11 @@
+framework module BeaconFramework {
+  umbrella header "BeaconFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module BeaconFramework.Swift {
+    header "BeaconFramework-Swift.h"
+    requires objc
+}
