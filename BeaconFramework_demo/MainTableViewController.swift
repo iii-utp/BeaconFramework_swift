@@ -43,8 +43,10 @@ class MainTableViewController: UIViewController, IIIBeaconDetectionDelegate {
     }
     
     func beaconInit(){
-        iiibeacon.get_beacons_withkey_security(server: "ideas.iiibeacon.net", key: "app key", completion: { (beacon_info: IIIBeacon.BeaconInfo, Sucess: Bool) in
+        iiibeacon.get_beacons_withkey_security(server: "ideas.iiibeacon.net", key: "e36a76430c205c03e6f3be43db917f7ea464cd4c", completion: { (beacon_info: IIIBeacon.BeaconInfo, Sucess: Bool) in
             if(Sucess){
+                print("beacon; \(beacon_info)")
+                
                 DispatchQueue.main.async(execute: {
                     self.detection = IIIBeaconDetection(beacon_data: beacon_info)
                     self.detection.delegate  = self
