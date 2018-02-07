@@ -8,22 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		1EF40CE42029AAC300646568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF40CE32029AAC300646568 /* AppDelegate.swift */; };
-		1EF40CE62029AAC300646568 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF40CE52029AAC300646568 /* ViewController.swift */; };
+		1EF40CE62029AAC300646568 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF40CE52029AAC300646568 /* MainTableViewController.swift */; };
 		1EF40CE92029AAC300646568 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EF40CE72029AAC300646568 /* Main.storyboard */; };
 		1EF40CEC2029AAC300646568 /* BeaconFramework_demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EF40CEA2029AAC300646568 /* BeaconFramework_demo.xcdatamodeld */; };
 		1EF40CEE2029AAC300646568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EF40CED2029AAC300646568 /* Assets.xcassets */; };
 		1EF40CF12029AAC300646568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EF40CEF2029AAC300646568 /* LaunchScreen.storyboard */; };
+		1EF40CF92029AC1E00646568 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF40CF82029AC1E00646568 /* BeaconFramework.framework */; };
+		1EF40CFB2029AD5E00646568 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF40CF82029AC1E00646568 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EF40CFE2029AFFE00646568 /* BeaconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF40CFD2029AFFE00646568 /* BeaconData.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1EF40CFC2029AD5E00646568 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1EF40CFB2029AD5E00646568 /* BeaconFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1EF40CE02029AAC300646568 /* BeaconFramework_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconFramework_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EF40CE32029AAC300646568 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1EF40CE52029AAC300646568 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1EF40CE52029AAC300646568 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		1EF40CE82029AAC300646568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1EF40CEB2029AAC300646568 /* BeaconFramework_demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeaconFramework_demo.xcdatamodel; sourceTree = "<group>"; };
 		1EF40CED2029AAC300646568 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EF40CF02029AAC300646568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EF40CF22029AAC300646568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EF40CF82029AC1E00646568 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
+		1EF40CFD2029AFFE00646568 /* BeaconData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF40CF92029AC1E00646568 /* BeaconFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,13 +76,15 @@
 		1EF40CE22029AAC300646568 /* BeaconFramework_demo */ = {
 			isa = PBXGroup;
 			children = (
+				1EF40CF82029AC1E00646568 /* BeaconFramework.framework */,
 				1EF40CE32029AAC300646568 /* AppDelegate.swift */,
-				1EF40CE52029AAC300646568 /* ViewController.swift */,
+				1EF40CE52029AAC300646568 /* MainTableViewController.swift */,
 				1EF40CE72029AAC300646568 /* Main.storyboard */,
 				1EF40CED2029AAC300646568 /* Assets.xcassets */,
 				1EF40CEF2029AAC300646568 /* LaunchScreen.storyboard */,
 				1EF40CF22029AAC300646568 /* Info.plist */,
 				1EF40CEA2029AAC300646568 /* BeaconFramework_demo.xcdatamodeld */,
+				1EF40CFD2029AFFE00646568 /* BeaconData.swift */,
 			);
 			path = BeaconFramework_demo;
 			sourceTree = "<group>";
@@ -77,6 +99,7 @@
 				1EF40CDC2029AAC300646568 /* Sources */,
 				1EF40CDD2029AAC300646568 /* Frameworks */,
 				1EF40CDE2029AAC300646568 /* Resources */,
+				1EF40CFC2029AD5E00646568 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,7 +163,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EF40CEC2029AAC300646568 /* BeaconFramework_demo.xcdatamodeld in Sources */,
-				1EF40CE62029AAC300646568 /* ViewController.swift in Sources */,
+				1EF40CFE2029AFFE00646568 /* BeaconData.swift in Sources */,
+				1EF40CE62029AAC300646568 /* MainTableViewController.swift in Sources */,
 				1EF40CE42029AAC300646568 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,7 +239,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -266,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -280,12 +304,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MUC33YQX2H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BeaconFramework_demo",
+				);
 				INFOPLIST_FILE = BeaconFramework_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iii.BeaconFramework-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -295,12 +323,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MUC33YQX2H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BeaconFramework_demo",
+				);
 				INFOPLIST_FILE = BeaconFramework_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iii.BeaconFramework-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
