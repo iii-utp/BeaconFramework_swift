@@ -173,7 +173,9 @@ Write a program in BeaconDetectd()
 
   Build and run the BeaconFramework_objc.xcodeproj in Xcode
 
-
+## Notice
+#### Error: linker command failed with exit code 1 (use -v to see invocation)
+Go to your project -> Build Settings -> Enable Bitcode -> No
 
 ## License
 BeaconFramework_demo is available under the Apache v2 License.
