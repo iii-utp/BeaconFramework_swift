@@ -16,7 +16,7 @@ class MainTableViewController: UIViewController, IIIBeaconDetectionDelegate {
     var notification = BeaconFramework.IIINotification()
     var detection = IIIBeaconDetection()
     var iiibeacon = IIIBeacon()
-    
+
     //Data
     var beaconList:[BeaconData] = []
     var messageList: [Message] = []
