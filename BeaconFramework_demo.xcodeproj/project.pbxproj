@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EE8F631207C9241003A2390 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE8F630207C9241003A2390 /* BeaconFramework.framework */; };
-		1EE8F632207C9241003A2390 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE8F630207C9241003A2390 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EE8F637207C9941003A2390 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE8F636207C9941003A2390 /* BeaconFramework.framework */; };
+		1EE8F638207C9941003A2390 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE8F636207C9941003A2390 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1EF40CE42029AAC300646568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF40CE32029AAC300646568 /* AppDelegate.swift */; };
 		1EF40CE62029AAC300646568 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF40CE52029AAC300646568 /* MainTableViewController.swift */; };
 		1EF40CE92029AAC300646568 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EF40CE72029AAC300646568 /* Main.storyboard */; };
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1EE8F632207C9241003A2390 /* BeaconFramework.framework in Embed Frameworks */,
+				1EE8F638207C9941003A2390 /* BeaconFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,7 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1EE8F630207C9241003A2390 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
+		1EE8F636207C9941003A2390 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
 		1EF40CE02029AAC300646568 /* BeaconFramework_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconFramework_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EF40CE32029AAC300646568 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EF40CE52029AAC300646568 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EE8F631207C9241003A2390 /* BeaconFramework.framework in Frameworks */,
+				1EE8F637207C9941003A2390 /* BeaconFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +60,7 @@
 		1EF40CD72029AAC300646568 = {
 			isa = PBXGroup;
 			children = (
-				1EE8F630207C9241003A2390 /* BeaconFramework.framework */,
+				1EE8F636207C9941003A2390 /* BeaconFramework.framework */,
 				1EF40CE22029AAC300646568 /* BeaconFramework_demo */,
 				1EF40CE12029AAC300646568 /* Products */,
 			);
