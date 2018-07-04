@@ -68,7 +68,7 @@ var iiibeacon = IIIBeacon()
 #### Step3:
 Initialize beaconFramework and connect to server.
 
-The key value has to replace "YOUR_APP_KEY" by app key you got like "e36a.......".
+You have to replace "YOUR_APP_KEY" by app key you got like "e36a.......".
 
 ```swift
 iiibeacon.get_beacons_withkey_security(server: "ideas.iiibeacon.net", key: "YOUR_APP_KEY", completion: { (beacon_info: IIIBeacon.BeaconInfo, Sucess: Bool) in
