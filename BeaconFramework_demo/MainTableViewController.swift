@@ -43,7 +43,7 @@ class MainTableViewController: UIViewController, IIIBeaconDetectionDelegate {
     }
     
     func beaconInit(){
-        iiibeacon.get_beacons_withkey_security(server: "ideas.iiibeacon.net", key: "app key", completion: { (beacon_info: IIIBeacon.BeaconInfo, Sucess: Bool) in
+        iiibeacon.get_beacons_withkey_security(server: "ideas.iiibeacon.net", key: "YOUR_APP_KEY", completion: { (beacon_info: IIIBeacon.BeaconInfo, Sucess: Bool) in
             if(Sucess){
                 print("beacon; \(beacon_info)")
                 
@@ -64,7 +64,7 @@ class MainTableViewController: UIViewController, IIIBeaconDetectionDelegate {
                         security_server:"ideas.iiibeacon.net",
                                   major: Int(item.major!)!,
                                   minor: Int(item.minor!)!,
-                                    key: "app key" ){ (completion,success)  -> () in
+                                    key: "YOUR_APP_KEY" ){ (completion,success)  -> () in
                         if(success){
                             //建立推播內容物件
                             let value = Message()
