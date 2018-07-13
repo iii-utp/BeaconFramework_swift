@@ -4,20 +4,20 @@ III Beacon Detect and Notification Information
 ## Installation
 Import the BeaconFramework.framework file
 
-#### Step1:
+### Step1:
 Add the BeaconFramework.framework file to Xcode project
 
 ![image](https://github.com/iii-utp/BeaconFramework_ios/raw/master/BeaconFramework_demo/Image/image1.png)
 
-#### Step2:
+### Step2:
 Add the BeaconFramework.framework to Embedded Binaries
 
 ![image](https://github.com/iii-utp/BeaconFramework_ios/raw/master/BeaconFramework_demo/Image/image2.png)
 
-#### Step3:
+### Step3:
 Open Info.plist, and add the following lines to ask privacy usage.
 
-##### iOS 9 App Transport Security issue
+#### iOS 9 App Transport Security issue
 Apple made a radical decision with iOS 9, disabling all unsecured HTTP traffic from iOS apps..
 Here’s how to disable this issue. 
 
@@ -27,7 +27,7 @@ Here’s how to disable this issue.
 	    <true/>
 	    </dict>
 
-##### Specifies the reason for your app to access the user’s location information while your app is in use.
+#### Specifies the reason for your app to access the user’s location information while your app is in use.
     
     <key>NSLocationWhenInUseUsageDescription</key>
 	  <string>Beacon Detect Usage</string>
@@ -68,8 +68,10 @@ var iiibeacon = IIIBeacon()
 #### Step3:
 Initialize beaconFramework and connect to server.
 
+You have to replace "YOUR_APP_KEY" by app key you got like "e36a.......".
+
 ```swift
-iiibeacon.get_beacons_withkey_security(server: "ideas.iiibeacon.net", key: "app key", completion: { (beacon_info: IIIBeacon.BeaconInfo, Sucess: Bool) in
+iiibeacon.get_beacons_withkey_security(server: "ideas.iiibeacon.net", key: "YOUR_APP_KEY", completion: { (beacon_info: IIIBeacon.BeaconInfo, Sucess: Bool) in
             if(Sucess){                
                 DispatchQueue.main.async(execute: {
                     self.detection = IIIBeaconDetection(beacon_data: beacon_info)
@@ -90,7 +92,7 @@ if (detection.ActiveBeaconList?.count)! > 0 {   //if detect more than a beacon
                         security_server:"ideas.iiibeacon.net",
                                   major: Int(item.major!)!,
                                   minor: Int(item.minor!)!,
-                                    key: "app key" ){ (completion,success)  -> () in
+                                    key: "YOUR_APP_KEY" ){ (completion,success)  -> () in
                         if(success){
                             //Create push message struct...
                         }
@@ -126,7 +128,7 @@ _notification = [IIINotification new] ;
 _iiibeacon = [IIIBeacon new];
 _detection = [IIIBeaconDetection new];
 
-[_iiibeacon get_beacons_withkey_securityWithServer:@"ideas.iiibeacon.net" key: @"app key" completion: ^(BeaconInfo *item , BOOL Sucess) {
+[_iiibeacon get_beacons_withkey_securityWithServer:@"ideas.iiibeacon.net" key: @"YOUR_APP_KEY" completion: ^(BeaconInfo *item , BOOL Sucess) {
         if (Sucess) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 _detection = [[IIIBeaconDetection alloc] initWithBeacon_data:item];
@@ -145,7 +147,7 @@ Write a program in BeaconDetectd()
 -(void)BeaconDetectd{
     if (_detection.ActiveBeaconList.count > 0) {
         for (ActiveBeacon* key in [self.detection ActiveBeaconList]) {
-                [_notification get_push_message_securityWithSecurity_server:@"ideas.iiibeacon.net" major: key.major.integerValue minor:key.minor.integerValue key:@"app key" completion:^(message *item, BOOL Sucess){
+                [_notification get_push_message_securityWithSecurity_server:@"ideas.iiibeacon.net" major: key.major.integerValue minor:key.minor.integerValue key:@"YOUR_APP_KEY" completion:^(message *item, BOOL Sucess){
                     if (Sucess) {
                         // Create push message struct...
                         NSLog(@"%@", [item.content.products[0] sellerName]);
