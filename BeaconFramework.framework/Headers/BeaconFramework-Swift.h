@@ -315,6 +315,7 @@ SWIFT_CLASS("_TtC15BeaconFramework18IIIBeaconDetection")
 - (nonnull instancetype)initWithServer_ip:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithSecurity_server:(NSString * _Nonnull)security_server key:(NSString * _Nonnull)key OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithBeacon_data:(BeaconInfo * _Nonnull)beacon_data OBJC_DESIGNATED_INITIALIZER;
+- (void)getReleaseTime;
 - (void)Start;
 - (void)StartWithProximity_uuid:(NSString * _Nonnull)proximity_uuid;
 - (void)Stop;

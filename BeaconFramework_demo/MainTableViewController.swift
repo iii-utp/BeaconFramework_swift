@@ -45,7 +45,6 @@ class MainTableViewController: UIViewController, IIIBeaconDetectionDelegate {
     func beaconInit(){
         iiibeacon.get_beacons_withkey_security(server: "ideas.iiibeacon.net", key: "YOUR_APP_KEY", completion: { (beacon_info: IIIBeacon.BeaconInfo, Sucess: Bool) in
             if(Sucess){
-                print("beacon; \(beacon_info)")
                 
                 DispatchQueue.main.async(execute: {
                     self.detection = IIIBeaconDetection(beacon_data: beacon_info)
@@ -107,9 +106,8 @@ extension MainTableViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        print("\(messageList[indexPath.row].message?.content.products[0].sellerName)")
-        print("\(messageList[indexPath.row].message?.content.products[0].photoUrl)")
-        print("\(messageList[indexPath.row].message?.content.products[0].originPrice)")
+        print("\(messageList[indexPath.row].message?.content.coupons[0].sellerName)")
+        print("\(messageList[indexPath.row].message?.content.coupons[0].photoUrl)")
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
