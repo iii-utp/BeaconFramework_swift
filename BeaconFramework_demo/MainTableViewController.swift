@@ -96,7 +96,7 @@ extension MainTableViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
-        let cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        let cell:UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
         let beaconLabel = cell.textLabel
         beaconLabel?.text = "id: \(beaconList[indexPath.row].id!)  ,Major: \(beaconList[indexPath.row].major!) ,Minor: \(beaconList[indexPath.row].minor!)"
         beaconLabel?.textColor = UIColor.brown
